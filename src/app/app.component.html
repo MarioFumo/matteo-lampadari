@@ -1,0 +1,32 @@
+<header class="header">
+  <div class="logo">
+    <a href="/">Matteo Lampadari</a>
+  </div>
+  <button class="menu-toggle" (click)="toggleMenu()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
+</header>
+
+<nav class="side-menu" [class.open]="isMenuOpen">
+  <button class="close-btn" (click)="toggleMenu()">&times;</button>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Collezioni</a></li>
+    <li><a href="#">Chi siamo</a></li>
+    <li><a href="#">Progetti</a></li>
+    <li><a href="#">Contatti</a></li>
+  </ul>
+</nav>
+
+<main class="main-content">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>L'arte della luce, forgiata a mano.</h1>
+      <p>Creazioni uniche che illuminano i tuoi spazi con un'eleganza senza tempo.</p>
+    </div>
+  </section>
+</main>
