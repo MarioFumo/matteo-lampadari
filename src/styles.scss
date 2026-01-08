@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 // FONTS
 $font-primary: 'Cormorant', serif;
 $font-secondary: 'Inter', sans-serif;
@@ -45,6 +51,7 @@ body {
   line-height: $body-line-height;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
